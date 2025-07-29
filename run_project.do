@@ -10,14 +10,14 @@
 clear all 
 set more off 
 
-// Setting Globals
+// Load user-specific settings and global paths
+do "$dofiles/user_profile.do"
 
-// o "$dofiles/user_profile.do"
+// Run the main analysis file (all steps in one)
+do "$dofiles/run_project.do"
 
-global raw      "$wd/01_rawdata"
-global cleaned  "$wd/02_cleandata"
-global dofiles  "$wd/03_dofiles"
-global output   "$wd/04_output"
+* Completion message
+display in green "Project completed. Output saved in $output"
 
 ********************************************************************************
 *							
