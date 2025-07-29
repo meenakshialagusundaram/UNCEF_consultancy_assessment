@@ -1,0 +1,7 @@
+# Ignore output and temporary files
+04_output/
+*.dta
+*.log
+*.xlsx
+*.pdf
+*.tmp
